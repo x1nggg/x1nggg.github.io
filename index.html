@@ -13,7 +13,7 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="https://github.com/x1nggg/x1nggg.github.io.git/404.html"/>
+    <link rel="canonical" href="https://github.com/x1nggg/x1nggg.github.io.git/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
@@ -23,8 +23,8 @@
         
         <meta name="description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Page Not Found">
-<meta property="og:url" content="https://github.com/x1nggg/x1nggg.github.io.git/404.html">
+<meta property="og:title" content="欢迎来到x1nggg的博客!">
+<meta property="og:url" content="https://github.com/x1nggg/x1nggg.github.io.git/index.html">
 <meta property="og:site_name" content="欢迎来到x1nggg的博客!">
 <meta property="og:description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
 <meta property="og:locale" content="zh_CN">
@@ -43,7 +43,7 @@
     
     <title>
         
-            Page Not Found | x1ng的博客
+            x1ng的博客 - Redefine Your Hexo Journey.
         
     </title>
 
@@ -121,17 +121,74 @@
 <main class="page-container" id="swup">
 
 	
+	
+    <style>
+        .home-banner-container {
+            background: none !important;
+        }
+        .home-article-item,
+        .sidebar-links,
+        .sidebar-content,
+        a.page-number,
+        a.extend,
+        .sidebar-links .links:hover,
+        .right-bottom-tools,
+        footer.footer {
+            background-color: var(--background-color-transparent-80) !important;
+        }
+        .right-bottom-tools:hover,
+        a.page-number:hover,
+        a.extend:hover {
+            background-color: var(--primary-color) !important;
+        }
+        .site-info,
+        .home-article-sticky-label {
+            background-color: var(--background-color-transparent-15) !important;
+        }
+        .home-article-sticky-label {
+            backdrop-filter: none !important;
+        }
+    </style>
+    <div class="home-banner-background transition-fade fixed top-0 left-0 w-screen h-screen scale-125 sm:scale-110 box-border will-change-transform bg-cover">
+        <img src="/x1nggg/x1nggg.github.io.git/images/wallhaven-wqery6-light.webp" alt="home-banner-background" class="w-full h-full object-cover dark:hidden">
+        <img src="/x1nggg/x1nggg.github.io.git/images/wallhaven-wqery6-dark.webp" alt="home-banner-background" class="w-full h-full object-cover hidden dark:block">
+    </div>
+
+
+<div class="home-banner-container flex justify-center items-center transition-fade relative">
+    
+    <div class="content mt-8 flex flex-col justify-center items-center transition-fade-down">
+        <div class="description flex flex-col justify-center items-center w-screen font-medium text-center"
+        
+        >
+            Theme Redefine
+            
+            
+                <p><i id="subtitle"></i></p>
+            
+        </div>
+        
+    </div>
+    <script>
+        const scrollToMain = ()=> {
+            console.log('scroll');
+            const target = document.querySelector('.main-content-container');
+            target.scrollIntoView({ behavior: 'smooth'});
+        }
+    </script>
+</div>
+	
 
 	<div class="main-content-container flex flex-col justify-between min-h-dvh">
 		<div class="main-content-header">
 			<header class="navbar-container px-6 md:px-12">
-    <div class="navbar-content transition-navbar ">
+    <div class="navbar-content transition-navbar has-home-banner">
         <div class="left">
             
             <a class="logo-title" href="/x1nggg/x1nggg.github.io.git/">
-                
+                <h1>
                 x1ng的博客
-                
+                </h1>
             </a>
         </div>
 
@@ -145,7 +202,7 @@
 
                             <li class="navbar-item">
                                 <!-- Menu -->
-                                <a class=""
+                                <a class="active"
                                    href="/x1nggg/x1nggg.github.io.git/"
                                         >
                                     <i class="fa-regular fa-house fa-fw"></i>
@@ -179,7 +236,7 @@
 
                     <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
                         
-                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full active"
                            href="/x1nggg/x1nggg.github.io.git/"
                         >
                             <span>
@@ -224,30 +281,98 @@
 
 		<div class="main-content-body transition-fade-up">
 			
+			<div class="home-sidebar-container">
+    <div class="sticky-container sticky">
+        
+        
+            
+            <div class="sidebar-content" >
+                <div class="avatar flex justify-center">
+    <img src="/x1nggg/x1nggg.github.io.git/images/avatar.jpg">
+</div>
+                <div class="author flex flex-col justify-center my-2.5 mx-0">
+    <div class="name">x1ng</div>
+    
+        <div class="label">Lv1</div>
+    
+</div>
+                <div class="statistics flex justify-around my-2.5">
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/x1nggg/x1nggg.github.io.git/tags">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">0</div>
+        <div class="label text-third-text-color text-sm">标签</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/x1nggg/x1nggg.github.io.git/categories">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">0</div>
+        <div class="label text-third-text-color text-sm">分类</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/x1nggg/x1nggg.github.io.git/archives">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">1</div>
+        <div class="label text-third-text-color text-sm">文章</div>
+    </a>
+</div>
+            </div>
+        
+
+    </div>
+</div>
+
+			
 
 			<div class="main-content">
-				<div class="page-template-container">
-	
+				<div class="home-content-container">
+    <ul class="home-article-list">
+        
+            <li class="home-article-item">
 
-	
+                
 
-	<div class="page-template-content markdown-body">
-		
-		<h1>Page Not Found</h1>
-		
+                
 
-		
-	</div>
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/x1nggg/x1nggg.github.io.git/2025/04/25/hello-world/">
+                            Hello World
+                        </a>
+                    </h3>
 
-	<div class="page-template-comments">
-		
-	</div>
+                    <div class="home-article-content markdown-body">
+                        
+                            
+                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Qu...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Fri Apr 25 2025 19:53:54 GMT+0800">
+                
+                    2025-04-25
+                
+            </span>
+        </span>
+        
+        
+    </div>
+
+    <a href="/x1nggg/x1nggg.github.io.git/2025/04/25/hello-world/">阅读全文<span class="seo-reader-text">Hello World</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
 </div>
 
-<div class="paginator">
-	
+                </div>
+            </li>
+        
+    </ul>
+
+    <div class="home-paginator px-7 py-5">
+        <div class="paginator">
+	<span class="page-number current">1</span>
 </div>
   
+    </div>
+</div>
+
 			</div>
 
 			
@@ -407,6 +532,7 @@
         containers: ["#swup"],
     });
 </script>
+
 
 
 
