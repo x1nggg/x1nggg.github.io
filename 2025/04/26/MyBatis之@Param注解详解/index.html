@@ -13,7 +13,7 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="https://x1nggg.github.io/2025/04/26/redis/"/>
+    <link rel="canonical" href="https://x1nggg.github.io/2025/04/26/mybatis之@param注解详解/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
@@ -23,14 +23,14 @@
         
         <meta name="description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="redis的基本使用">
-<meta property="og:url" content="https://x1nggg.github.io/2025/04/26/redis/index.html">
+<meta property="og:title" content="MyBatis之@Param注解详解">
+<meta property="og:url" content="https://x1nggg.github.io/2025/04/26/MyBatis%E4%B9%8B@Param%E6%B3%A8%E8%A7%A3%E8%AF%A6%E8%A7%A3/index.html">
 <meta property="og:site_name" content="欢迎来到x1nggg的博客!">
 <meta property="og:description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://x1nggg.github.io/images/redefine-og.webp">
-<meta property="article:published_time" content="2025-04-26T07:27:48.000Z">
-<meta property="article:modified_time" content="2025-04-26T07:45:27.732Z">
+<meta property="article:published_time" content="2025-04-26T08:55:34.000Z">
+<meta property="article:modified_time" content="2025-04-26T09:15:52.141Z">
 <meta property="article:author" content="x1ng">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://x1nggg.github.io/images/redefine-og.webp">
@@ -45,7 +45,7 @@
     
     <title>
         
-            redis的基本使用 | x1ng的博客
+            MyBatis之@Param注解详解 | x1ng的博客
         
     </title>
 
@@ -278,11 +278,11 @@
         <div class="label text-third-text-color text-sm">标签</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">1</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">2</div>
         <div class="label text-third-text-color text-sm">分类</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">2</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">1</div>
         <div class="label text-third-text-color text-sm">文章</div>
     </a>
 </div>
@@ -305,7 +305,7 @@
 		<div class="article-title relative w-full">
 			
 			<div class="w-full flex items-center pt-6 justify-start">
-				<h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">redis的基本使用</h1>
+				<h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">MyBatis之@Param注解详解</h1>
 			</div>
 			
 		</div>
@@ -326,15 +326,15 @@
 					<div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2025-04-26 15:27:48</span>
-        <span class="mobile">2025-04-26 15:27:48</span>
+        <span class="desktop">2025-04-26 16:55:34</span>
+        <span class="mobile">2025-04-26 16:55:34</span>
         <span class="hover-info">创建</span>
     </span>
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2025-04-26 15:45:27</span>
-            <span class="mobile">2025-04-26 15:45:27</span>
+            <span class="desktop">2025-04-26 17:15:52</span>
+            <span class="mobile">2025-04-26 17:15:52</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -353,6 +353,16 @@
                     
                     
                 
+                    
+                        
+                            <li>></li>
+                        
+                        <li>
+                            <a href="/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/MyBatis/">MyBatis</a>&nbsp;
+                        </li>
+                    
+                    
+                
             </ul>
         </span>
     
@@ -361,12 +371,12 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>93 字</span>
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>1.3k 字</span>
         </span>
     
     
         <span class="article-min2read article-meta-item">
-            <i class="fa-regular fa-clock"></i>&nbsp;<span>1 分钟</span>
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>4 分钟</span>
         </span>
     
     
@@ -385,13 +395,153 @@
 
 
 		<div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-			<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p><strong>你好，我是来自西南石油大学的x1ng,目前是数据科学与大数据技术专业一名大二学生，下面我来介绍redis…</strong></p>
-<ul>
-<li><p>redis是一款基于k-v的非关系型数据库,他是基于内存的，因此读写性能较好</p>
-</li>
-<li><p>redis是单线程的，不会出现多线程数据安全问题.</p>
-</li>
-</ul>
+			<h1 id="1-认识-Param注解"><a href="#1-认识-Param注解" class="headerlink" title="1.认识@Param注解"></a>1.认识@Param注解</h1><p>  @Param注解通常用于 MyBatis（一个流行的 Java 持久层框架）中，<strong>用于给 SQL 映射方法中的参数起别名，便于在 XML 映射文件中引用</strong>。这是 MyBatis 中的一种常见用法，尤其在方法参数较多时，使用 @Param 可以明确标识参数的名称。</p>
+<h1 id="2-param作用"><a href="#2-param作用" class="headerlink" title="2.@param作用"></a>2.@param作用</h1><p>我们先来看这样一个情景： 数据库中有一张学生表(id,name,age,height,birth,sex),我们想要通过name和sex字段来查询某条记录，方法定义如下:</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/image-20250426171300416.png"
+                      alt="image-20250426171300416"
+                ></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/image-20250426171311872.png"
+                      alt="image-20250426171311872"
+                ></p>
+<p>此时测试程序出现报错:<strong>org.apache.ibatis.binding.BindingException: Parameter ‘name’ not found. Available parameters are [arg1, arg0, param1, param2]</strong></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/image-20250426171325778.png"
+                      alt="image-20250426171325778"
+                ></p>
+<p>原因是在 MyBatis 中，当你使用 XML 映射文件进行 SQL 映射时，SQL 中的参数通常通过 #{} 方式引用。但在多个参数的情况下，MyBatis 通过<strong>参数的位置</strong>来引用它们，比如第一个参数为  arg0(param1),第二个参数为arg1(param2)……以此类推。</p>
+<p>因此我们将mapper映射文件中#{}的位置改成下图所示，就可以正常查询到了。</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/image-20250426171337925.png"
+                      alt="image-20250426171337925"
+                ></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/image-20250426171343770.png"
+                      alt="image-20250426171343770"
+                ></p>
+<p>而@Param注解允许我们明确标识参数的名称。</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/image-20250426171358233.png"
+                      alt="image-20250426171358233"
+                ></p>
+<p>在使用了@Param后，最开始的问题也不存在了，可以正常查询到结果。</p>
+<h1 id="3-为什么要使用-Param注解？"><a href="#3-为什么要使用-Param注解？" class="headerlink" title="3.为什么要使用@Param注解？"></a>3.为什么要使用@Param注解？</h1><p><strong>1.命名清晰</strong>：当方法有多个参数时，使用 @Param 为每个参数命名可以清晰地知道每个参数的含义，避免参数混乱。</p>
+<p><strong>2.避免位置依赖</strong>：如果不使用 @Param，MyBatis 会根据参数的位置来推断它们的名称。但如果方法参数顺序发生变化，SQL 映射可能会出错。通过 @Param 可以避免这种问题，因为每个参数都显式地指定了名称。</p>
+<p><strong>3.提高可读性和维护性</strong>：在 SQL 映射文件中，可以通过清晰的参数名称提高代码的可读性，使得后续的维护更加方便。</p>
+<h1 id="4-Param注解原理"><a href="#4-Param注解原理" class="headerlink" title="4.@Param注解原理"></a>4.@Param注解原理</h1><p>下面我们深入了解一下@Param底层原理:</p>
+<p>①首先我们在获取了mapper接口代理对象并执行方法时，我们首先进入MapperProxy对象中执行invoke方法</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/image-20250426171407422.png"
+                      alt="image-20250426171407422"
+                ></p>
+<p>其中的核心代码是：</p>
+<div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">return </span><br><span class="line">Object.class.equals(method.getDeclaringClass()) ? </span><br><span class="line">method.invoke(this, args) :</span><br><span class="line">this.cachedInvoker(method).invoke(proxy, method, args, this.sqlSession);</span><br></pre></td></tr></table></figure></div>
+
+
+
+<p>即判断调用的方法(指getStudentByNameAndSex)是否是Object类中定义的方法(显然不是)，因此会执行第二个分支方法this.cachedInvoker(method).invoke(proxy, method, args, this.sqlSession);</p>
+<p>②：进入第二个分支又会调用MapperProxy类中的invoke方法,其中执行了一个名为execute的方法</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/image-20250426171416644.png"
+                      alt="image-20250426171416644"
+                ></p>
+<p>③进入execute方法后，在内部判断了我们最开始调用方法对应的sql语句类型（图中为SELECT）</p>
+<p>进入SELECT判断分支后,在分支内部对调用方法的返回值进行了多种情况的判断:</p>
+<p>在图中的方法最后后进入else分支，在其中执行关键代码:</p>
+<div class="code-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">param = <span class="built_in">this</span>.method.convertArgsToSqlCommandParam(args);</span><br></pre></td></tr></table></figure></div>
+
+
+
+<p>在这句代码中，args就是我们执行方法时传递的参数值；</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/image-20250426171425431.png"
+                      alt="image-20250426171425431"
+                ></p>
+<p>方法名<strong>convertArgsToSqlCommandParam</strong>，直译过来就是<strong>将参数转换为SQL命令参数</strong></p>
+<p>因此@Param的作用将在这个方法中进行体现</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/image-20250426171430907.png"
+                      alt="image-20250426171430907"
+                ></p>
+<p>④在convertArgsToSqlCommandParam中，又调用了getNamedParams(args)方法，</p>
+<p>args依然是我们传递的参数值</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/image-20250426171436273.png"
+                      alt="image-20250426171436273"
+                ></p>
+<p>⑤getNamedParams方法中，会判断我们是否使用了@Param注解</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/image-20250426171442321.png"
+                      alt="image-20250426171442321"
+                ></p>
+<p>由于我们使用了注解，因此会进入else分支，定义一个<strong>Map&lt;String, Object&gt;类型的param变量</strong>，然后对本类中一个名为names的SortedMap&lt;Integer, String&gt;集合的每一个entry进行遍历，这个集合的作用是<strong>存放我们@Param指定的参数名，key为序号(从0开始),value为参数名</strong>。</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/image-20250426171450236.png"
+                      alt="image-20250426171450236"
+                ></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/image-20250426171459058.png"
+                      alt="image-20250426171459058"
+                ></p>
+<p>其中关键的代码：</p>
+<div class="code-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">param.put(entry.getValue(), args[(Integer)entry.getKey()]);</span><br></pre></td></tr></table></figure></div>
+
+
+
+<p>entry.getValue()是@Param中指定的参数名(name,sex), entry.getKey()是参数名对应的序号(0,1)，args[(Integer)entry.getKey()]就是取出args中我们传递的参数值。</p>
+<p>也就是说程序会依次取出@Param注解中指定的值作为key，对应的参数值作为value存储在param中。</p>
+<p>遍历完成后，param集合的存储结果如下：</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/image-20250426171509703.png"
+                      alt="image-20250426171509703"
+                ></p>
+<p>对比一下不使用@Param注解时，param集合的存储结果就是这样的</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/image-20250426171520058.png"
+                      alt="image-20250426171520058"
+                ></p>
+<p><strong>可以发现我们通过@Param自定义的参数名覆盖了原本的arg0,arg1…但是param1，param2仍然可以使用。</strong></p>
+<p>最后getNamedParams方法会将param返回，这样@Param注解也就发挥了他的作用。</p>
+<h1 id="5-总结"><a href="#5-总结" class="headerlink" title="5.总结"></a>5.总结</h1><p>  @Param 注解在 MyBatis 中的作用是帮助映射方法的多个参数，使它们能够在 SQL 语句中有明确的名字。对于没有 @Param 的方法参数，MyBatis 会将它们打包成一个 Map 来传递给 SQL 语句。使用 @Param 注解能够确保每个参数都有唯一的标识，并避免多参数情况下的冲突问题。</p>
+<p>   <strong>在程序调用时执行到目标方法后，底层会建立一个SortedMap&lt;Integer, String&gt;类型的集合，称names，其中key是序号(从0开始),value是@Param中指定的参数名;然后遍历names，将names中所有的参数名作为key，传递的参数值作为value存储到一个Map&lt;String, Object&gt; 中，称param，最后将param返回。</strong><br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/assets/image-20250426171551057.png"
+                      alt="image-20250426171551057"
+                ></p>
 
 		</div>
 
@@ -399,18 +549,18 @@
 		<div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
 			<div class="article-copyright-info-container">
     <ul>
-        <li><strong>标题:</strong> redis的基本使用</li>
+        <li><strong>标题:</strong> MyBatis之@Param注解详解</li>
         <li><strong>作者:</strong> x1ng</li>
         <li><strong>创建于
-                :</strong> 2025-04-26 15:27:48</li>
+                :</strong> 2025-04-26 16:55:34</li>
         
             <li>
                 <strong>更新于
-                    :</strong> 2025-04-26 15:45:27
+                    :</strong> 2025-04-26 17:15:52
             </li>
         
         <li>
-            <strong>链接:</strong> https://github.com/x1nggg/x1nggg.github.io.git/2025/04/26/redis/
+            <strong>链接:</strong> https://github.com/x1nggg/x1nggg.github.io.git/2025/04/26/MyBatis之@Param注解详解/
         </li>
         <li>
             <strong>
@@ -432,23 +582,6 @@
 
 		
 
-		
-		<div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
-			
-			
-			<div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-				<a class="next" rel="next" href="/2025/04/26/jvm/">
-					<span class="title flex justify-center items-center">
-						<span class="post-nav-title-item">jvm</span>
-						<span class="post-nav-item">下一篇</span>
-					</span>
-					<span class="right arrow-icon flex justify-center items-center">
-						<i class="fa-solid fa-chevron-right"></i>
-					</span>
-				</a>
-			</div>
-			
-		</div>
 		
 
 
@@ -503,8 +636,8 @@
 		<div class="post-toc-wrap">
 	<div class="post-toc">
 		<div class="toc-title">目录</div>
-		<div class="page-title">redis的基本使用</div>
-		<ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%8B%E7%BB%8D"><span class="nav-text">介绍</span></a></li></ol>
+		<div class="page-title">MyBatis之@Param注解详解</div>
+		<ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-%E8%AE%A4%E8%AF%86-Param%E6%B3%A8%E8%A7%A3"><span class="nav-text">1.认识@Param注解</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-param%E4%BD%9C%E7%94%A8"><span class="nav-text">2.@param作用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BD%BF%E7%94%A8-Param%E6%B3%A8%E8%A7%A3%EF%BC%9F"><span class="nav-text">3.为什么要使用@Param注解？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-Param%E6%B3%A8%E8%A7%A3%E5%8E%9F%E7%90%86"><span class="nav-text">4.@Param注解原理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-%E6%80%BB%E7%BB%93"><span class="nav-text">5.总结</span></a></li></ol>
 
 	</div>
 </div>
@@ -531,11 +664,11 @@
                 
                 <p class="post-count space-x-0.5">
                     <span>
-                        共撰写了 2 篇文章
+                        共撰写了 1 篇文章
                     </span>
                     
                         <span>
-                            共 98 字
+                            共 1.3k 字
                         </span>
                     
                 </p>
