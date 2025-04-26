@@ -1,1 +1,1 @@
-[{"title":"redis的基本使用","url":"/x1nggg/x1nggg.github.io.git/2025/04/26/redis/","content":"介绍你好，我是来自西南石油大学的x1ng,目前是数据科学与大数据技术专业一名大二学生，下面我来介绍redis…\n\nredis是一款基于k-v的非关系型数据库,他是基于内存的，因此读写性能较好\n\nredis是单线程的，不会出现多线程数据安全问题.\n\n\n","categories":["学习记录"]}]
+[{"title":"redis的基本使用","url":"/2025/04/26/redis/","content":"介绍你好，我是来自西南石油大学的x1ng,目前是数据科学与大数据技术专业一名大二学生，下面我来介绍redis…\n\nredis是一款基于k-v的非关系型数据库,他是基于内存的，因此读写性能较好\n\nredis是单线程的，不会出现多线程数据安全问题.\n\n\n","categories":["学习记录"]}]
